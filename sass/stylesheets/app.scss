@@ -30,16 +30,19 @@ body,a,h1,h2,h3,h4,h5,h6,li,ul,ol,label,input,select,span {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body{
+  background: $dusty-pink;
+}
+
 h1{
   font-size: 2.5em;
   font-family: "cooper_hewittheavy", Arial-black, Arial;
-  text-transform: uppercase;
 }
 
 h2{
-  font-size: 1.5rem;
-  font-family: 'Source Sans Pro', Arial;
-  font-weight: 400;
+  font-size: 2rem;
+  font-family: "cooper_hewittheavy", Arial-black, Arial;
+  text-transform: uppercase;
 }
 
 h3{
@@ -47,15 +50,16 @@ h3{
   color: $dark-gray;
 }
 
-a{
-  color: $light-blue !important;
+p{
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', Arial;
+  font-weight: 400;
 }
 
 hr{
   border-bottom: 1px solid $light-gray;
 }
 
-.story-section{
-  width: 100%;
-  min-height: 300px;
+.row{
+  max-width: none;
 }

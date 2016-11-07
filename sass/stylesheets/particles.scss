@@ -29,29 +29,30 @@ canvas{
   height: 100vh;
   min-height: 720px;
   display: table;
-	pointer-events : none;
+	pointer-events: none;
   -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   perspective: 150px;
 	color: #ffecb5;
   margin: 0 auto;
+  text-align: center;
   .text{
     text-rendering: optimizeLegibility;
     display: table-cell;
     vertical-align: middle;
-    padding: .8rem;
-    padding-right: 10%;
-    padding-top: 2rem;
-
   	-webkit-animation: flip .6s;
+    padding: 2rem 10%;
   	animation-iteration-count: once;
   	animation-timing-function: cubic-bezier(.34,.01,.18,1.35);
-
     h1{
       @media screen and (min-width: 1080px) {
       	font-size: 7rem;
       	line-height: 9rem;
       }
       @media screen and (max-width: 1080px) {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+      @media screen and (max-height: 720px) {
         font-size: 5rem;
         line-height: 5rem;
       }

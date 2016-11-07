@@ -1,0 +1,52 @@
+.prof-overlay{
+  background-image: url(/images/cutoutbw2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px;
+  mix-blend-mode: multiply;
+  opacity: .9;
+}
+
+.index-block{
+  min-height: 500px;
+  display: table;
+  width: 100%;
+  background-color: $story-yellow;
+  color: $offwhite;
+  position: relative;
+  video{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 500px;
+  }
+  .color-cover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fe826a;
+    $grad1:  $story-yellow;
+    $grad2: $dusty-pink;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
+    background: -webkit-linear-gradient(45deg, $grad1, $grad2);
+    background: -moz-linear-gradient(45deg, $grad1, $grad2);
+    background: -ms-linear-gradient(45deg, $grad1, $grad2);
+    background: -o-linear-gradient(45deg, $grad1, $grad2);
+    mix-blend-mode: overlay;
+    opacity: 1;
+  }
+  .video-cover{
+    display: table;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    .video-text{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

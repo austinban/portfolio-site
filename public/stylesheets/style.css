@@ -2334,29 +2334,32 @@ html.is-reveal-open, html.is-reveal-open body {
 body, a, h1, h2, h3, h4, h5, h6, li, ul, ol, label, input, select, span {
   font-family: 'Source Sans Pro', sans-serif; }
 
+body {
+  background: #fe826a; }
+
 h1 {
   font-size: 2.5em;
-  font-family: "cooper_hewittheavy", Arial-black, Arial;
-  text-transform: uppercase; }
+  font-family: "cooper_hewittheavy", Arial-black, Arial; }
 
 h2 {
-  font-size: 1.5rem;
-  font-family: 'Source Sans Pro', Arial;
-  font-weight: 400; }
+  font-size: 2rem;
+  font-family: "cooper_hewittheavy", Arial-black, Arial;
+  text-transform: uppercase; }
 
 h3 {
   font-size: .8em;
   color: #333; }
 
-a {
-  color: #3498DB !important; }
+p {
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', Arial;
+  font-weight: 400; }
 
 hr {
   border-bottom: 1px solid #ddd; }
 
-.story-section {
-  width: 100%;
-  min-height: 300px; }
+.row {
+  max-width: none; }
 
 canvas {
   display: block;
@@ -2391,15 +2394,14 @@ canvas {
   /* Chrome, Safari, Opera  */
   perspective: 150px;
   color: #ffecb5;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .huge-wrap .text {
     text-rendering: optimizeLegibility;
     display: table-cell;
     vertical-align: middle;
-    padding: .8rem;
-    padding-right: 10%;
-    padding-top: 2rem;
     -webkit-animation: flip .6s;
+    padding: 2rem 10%;
     animation-iteration-count: once;
     animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
     @media screen and (min-width: 1080px) {
@@ -2407,6 +2409,10 @@ canvas {
         font-size: 7rem;
         line-height: 9rem; } }
     @media screen and (max-width: 1080px) {
+      .huge-wrap .text h1 {
+        font-size: 5rem;
+        line-height: 5rem; } }
+    @media screen and (max-height: 720px) {
       .huge-wrap .text h1 {
         font-size: 5rem;
         line-height: 5rem; } }
@@ -2428,37 +2434,55 @@ canvas {
   color: #333; }
 
 .nav .menu div {
-  margin: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #ccc; }
+  margin: .5em; }
+
+.nav .menu .wrapper {
+  display: table-cell;
+  vertical-align: middle; }
 
 .nav .menu a {
+  font-family: "cooper_hewittheavy", Arial-black, Arial;
   text-decoration: none;
-  color: #3367d6; }
+  color: #ffecb5;
+  font-size: 3rem;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  -webkit-perspective: 150px;
+  /* Chrome, Safari, Opera  */
+  perspective: 150px;
+  padding: .25em; }
 
 .nav .menu a:hover {
-  text-decoration: underline; }
+  -webkit-animation: tottle .2s;
+  animation-iteration-count: once;
+  animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
+
+@keyframes tottle {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(0.94);
+    /* Chrome, Safari, Opera  */
+    transform: scale(0.94); }
+  100% {
+    opacity: 1; } }
 
 .nav .menu div:last-child {
   border: 0; }
 
 .nav .menu--off {
-  position: absolute;
-  display: block;
-  background: #eee;
-  min-height: 600px;
-  height: 125%;
-  margin-top: 1em;
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  top: 0;
+  display: table;
+  background: rgba(254, 130, 106, 0.9);
+  height: 100vh;
   transition: all 300ms;
-  z-index: 100; }
-  @media screen and (min-width: 1080px) {
-    .nav .menu--off {
-      left: -50%;
-      width: 50%; } }
-  @media screen and (max-width: 1080px) {
-    .nav .menu--off {
-      left: -90%;
-      width: 90%; } }
+  z-index: 100;
+  text-align: center;
+  overflow: hidden; }
 
 .nav .menu--on {
   left: 0;
@@ -2469,11 +2493,13 @@ canvas {
   display: block;
   border: none;
   background: none;
-  outline: 0; }
+  outline: 0;
+  z-index: 10000; }
 
 .nav .material-design-hamburger__icon {
   padding: 3rem 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
 
 .nav .material-design-hamburger__layer {
   display: block;
@@ -2482,7 +2508,8 @@ canvas {
   background: #ffecb5;
   position: relative;
   animation-duration: 300ms;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  z-index: 1000; }
 
 .nav .material-design-hamburger__layer:before, .nav .material-design-hamburger__layer:after {
   display: block;
@@ -2514,13 +2541,16 @@ canvas {
   animation-fill-mode: forwards; }
 
 .nav .material-design-hamburger__icon--from-arrow {
-  animation-name: material-design-hamburger__icon--slide-from; }
+  animation-name: material-design-hamburger__icon--slide-from;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1); }
 
 .nav .material-design-hamburger__icon--from-arrow:before {
-  animation-name: material-design-hamburger__icon--slide-before-from; }
+  animation-name: material-design-hamburger__icon--slide-before-from;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1); }
 
 .nav .material-design-hamburger__icon--from-arrow:after {
-  animation-name: material-design-hamburger__icon--slide-after-from; }
+  animation-name: material-design-hamburger__icon--slide-after-from;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1); }
 
 @keyframes material-design-hamburger__icon--slide {
   0% { }
@@ -2561,7 +2591,56 @@ canvas {
   100% { } }
 
 .absolute-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%; }
+
+.prof-overlay {
+  background-image: url(/images/cutoutbw2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px;
+  mix-blend-mode: multiply;
+  opacity: .9; }
+
+.index-block {
+  min-height: 500px;
+  display: table;
+  width: 100%;
+  background-color: #f0c138;
+  color: #ECF0F1;
+  position: relative; }
+  .index-block video {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 500px; }
+  .index-block .color-cover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fe826a;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0c138), to(#fe826a));
+    background: -webkit-linear-gradient(45deg, #f0c138, #fe826a);
+    background: -moz-linear-gradient(45deg, #f0c138, #fe826a);
+    background: -ms-linear-gradient(45deg, #f0c138, #fe826a);
+    background: -o-linear-gradient(45deg, #f0c138, #fe826a);
+    mix-blend-mode: overlay;
+    opacity: 1; }
+  .index-block .video-cover {
+    display: table;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%; }
+    .index-block .video-cover .video-text {
+      display: table-cell;
+      vertical-align: middle; }
+
+.footer {
+  background: #fe826a;
+  color: #ffecb5; }
