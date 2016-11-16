@@ -1,0 +1,48 @@
+.footer{
+  background-color: #fe826a;
+  color: $cream;
+  text-align: center;
+  p{
+    font-size: 1rem;
+    padding-top: 20px
+  }
+  ul{
+    padding: 0 10%;
+    margin-top: 20px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    li{
+      text-align: center;
+      display: table-cell;
+      font-size: 1.5rem;
+      font-weight: 400;
+      a{
+        padding: 10px;
+        color: $cream !important;
+        transition: color .5s;
+        font-family: "cooper_hewittheavy", Arial-black, Arial;
+        text-transform: uppercase;
+        &:hover {
+          color: lighten($cream, 10) !important;
+        }
+      }
+      &:hover {
+        -webkit-animation: tottle .2s;
+        animation-iteration-count: once;
+        animation-timing-function: cubic-bezier(.34,.01,.18,1.35);
+      }
+    }
+  }
+  .topper{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fe826a), to(#f0c138));
+    background: -webkit-linear-gradient(bottom, #fe826a, #f0c138);
+    background: -moz-linear-gradient(bottom, #fe826a, #f0c138);
+    background: -ms-linear-gradient(bottom, #fe826a, #f0c138);
+    background: -o-linear-gradient(bottom, #fe826a, #f0c138);
+    height: 50px;
+  }
+  .row{
+    padding: 10px 10%;
+  }
+}

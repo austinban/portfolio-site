@@ -6,23 +6,24 @@
     <% include ../partials/head %>
 </head>
 <body class="container">
-
-  <% include ../partials/absolute-header %>
-
   <main>
     <div id="particles-js"></div>
     <div class="huge-wrap">
       <div class="text">
-        <h1>I am a designer and developer finding what I love and loving what I do.</h1>
-        <h2>A portfolio by Austin Ban</h2>
-      </div>
+        <h1 class="huge">I am a designer and developer, finding what I love, and loving what&nbsp;I&nbsp;do.</h1>
+        <p>A portfolio by Austin Ban</p>
     </div>
-    <div class="story-section">Test</div>
+  </div>
+  <div class="down-arrow bounce">
+    <a href="#workSection"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+  </div>
+  <!-- <p>Work I've done arrow down</p> -->
+    <% include ../partials/classnav-block %>
+    <% include ../partials/venture360-block %>
+    <% include ../partials/glorieta-block %>
+    <% include ../partials/profile %>
   </main>
-
+  <% include ../partials/absolute-header %>
   <% include ../partials/footer %>
-
-  <script src="/javascripts/particles.js"></script>
-  <script src="/javascripts/app.js"></script>
 </body>
 </html>
