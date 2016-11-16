@@ -6,43 +6,33 @@
     <% include ../partials/head %>
 </head>
 <body class="container">
-
-
   <main>
     <div id="particles-js"></div>
     <div class="huge-wrap">
       <div class="text">
-        <h1>I am a designer and developer, finding what I love, and loving what I do.</h1>
+        <h1 class="huge">I am a designer and developer, finding what I love, and loving what&nbsp;I&nbsp;do.</h1>
         <p>A portfolio by Austin Ban</p>
-      </div>
     </div>
-    <!--
+  </div>
+  <div class="down-arrow bounce">
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  </div>
+  <!-- <p>Work I've done arrow down</p> -->
+    <% include ../partials/classnav-block %>
+    <% include ../partials/venture360-block %>
+    <% include ../partials/glorieta-block %>
     <% include ../partials/profile %>
-    <div class="index-block">
-      <p>Project that I'm super proud of with a good way of displaying it, like the hackathon or Classnav</p>
-      <p>Just have thumbnails here or some preview with a clickthrough to a page about it</p>
-    </div> -->
-    <div class="index-block">
-      <video id="bgvid" playsinline autoplay muted loop>
-        <source src="/videos/sh_1.mp4" type="video/mp4">
-      </video>
-      <!-- <div class="color-cover"></div> -->
-      <div class="video-cover">
-        <div class="video-text">
-          <h1>Story House background video and description of it</h1>
-        </div>
-      </div>
-    </div>
-    <div class="index-block">
-      <p>Awards and experience including everywhere I've worked and hackathons that I have won</p>
-      <p>This is the basic resume section</p>
-      <p>Base it off of </p> <a href="http://www.jennyjohannesson.com/">http://www.jennyjohannesson.com/</a>
-    </div>
   </main>
   <% include ../partials/absolute-header %>
   <% include ../partials/footer %>
 
   <script src="/javascripts/particles.js"></script>
   <script src="/javascripts/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200
+    });
+  </script>
 </body>
 </html>

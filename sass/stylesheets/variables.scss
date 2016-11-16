@@ -41,7 +41,8 @@ $mid-blue: #2980B9;
 //Austin Portfolio Colors
 $dusty-pink: #fe826a;
 $story-yellow: #f0c138;
-$cream: #ffecb5;
+$cream: lighten(#ffecb5, 10);
+// $cream: $offwhite;
 $slate: #0B3538;
 
 // Font Colors

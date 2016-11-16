@@ -7,46 +7,142 @@
   mix-blend-mode: multiply;
   opacity: .9;
 }
-
+@mixin gradient-cover($top, $mid, $bottom, $url) {
+  background: -moz-linear-gradient(top, $top 0%, $mid 10%, $mid 90%, $bottom 100%), url($url) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(10%, $mid), color-stop(90%, $mid), color-stop(100%, $bottom)), url($url) no-repeat;
+  background: -webkit-linear-gradient(top, $top 0%, $mid 10%, $mid 90%, $bottom 100%), url($url) no-repeat;
+  background: -o-linear-gradient(top, $top 0%, $mid 10%, $mid 90%, $bottom 100%), url($url) no-repeat;
+  background: -ms-linear-gradient(top, $top 0%, $mid 10%,$mid 90%, $bottom 100%), url($url) no-repeat;
+  background: linear-gradient(to bottom, $top 0%, $mid 10%, $mid 90%, $bottom 100%), url($url) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pink{
+  background-color: $dusty-pink !important;
+}
 .index-block{
   min-height: 500px;
   display: table;
   width: 100%;
-  background-color: $story-yellow;
-  color: $offwhite;
   position: relative;
-  video{
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    min-height: 500px;
+  color: $cream;
+  padding: 30px 0;
+  .text-block{
+    text-rendering: optimizeLegibility;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 150px 10%;
+    min-height: 450px;
   }
-  .color-cover{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fe826a;
-    $grad1:  $story-yellow;
-    $grad2: $dusty-pink;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
-    background: -webkit-linear-gradient(45deg, $grad1, $grad2);
-    background: -moz-linear-gradient(45deg, $grad1, $grad2);
-    background: -ms-linear-gradient(45deg, $grad1, $grad2);
-    background: -o-linear-gradient(45deg, $grad1, $grad2);
-    mix-blend-mode: overlay;
-    opacity: 1;
+}
+.gradient-block{
+  $grad1:  $story-yellow;
+  $grad2: $dusty-pink;
+  position: relative;
+  display: table;
+  width: 100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
+  background: -webkit-linear-gradient(top, $grad1, $grad2);
+  background: -moz-linear-gradient(top, $grad1, $grad2);
+  background: -ms-linear-gradient(top, $grad1, $grad2);
+  background: -o-linear-gradient(top, $grad1, $grad2);
+  .text-block{
+    text-rendering: optimizeLegibility;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 150px 10%;
+    min-height: 450px;
   }
-  .video-cover{
-    display: table;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    .video-text{
-      display: table-cell;
-      vertical-align: middle;
-    }
+}
+.gradient-block2{
+  $grad2:  $story-yellow;
+  $grad1: $dusty-pink;
+  position: relative;
+  display: table;
+  width: 100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
+  background: -webkit-linear-gradient(top, $grad1, $grad2);
+  background: -moz-linear-gradient(top, $grad1, $grad2);
+  background: -ms-linear-gradient(top, $grad1, $grad2);
+  background: -o-linear-gradient(top, $grad1, $grad2);
+  .text-block{
+    text-rendering: optimizeLegibility;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 150px 10%;
+    min-height: 450px;
+  }
+}
+.classnav-window{
+  padding: 250px 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.4);
+  $bottom: $story-yellow;
+  $url: "/images/classNav.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.venture360-window{
+  padding: 250px 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.6);
+  $bottom: $story-yellow;
+  $url: "/images/placeholder2.png";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.glorieta-window{
+  padding: 250px 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.4);
+  $bottom: $story-yellow;
+  $url: "/images/neature.jpeg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.vanity-window{
+  padding: 250px 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.3);
+  $bottom: $dusty-pink;
+  $url: "/images/neature.jpeg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.belmont-window{
+  padding: 250px 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.6);
+  $bottom: $dusty-pink;
+  $url: "/images/belmont.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+video{
+  position: absolute;;
+  top: 0;
+  min-height: 100%;
+  height: 500px
+}
+.color-cover{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fe826a;
+  $grad1:  $dusty-pink;
+  $grad2: $dusty-pink;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
+  background: -webkit-linear-gradient(45deg, $grad1, $grad2);
+  background: -moz-linear-gradient(45deg, $grad1, $grad2);
+  background: -ms-linear-gradient(45deg, $grad1, $grad2);
+  background: -o-linear-gradient(45deg, $grad1, $grad2);
+  mix-blend-mode: color;
+  opacity: .2;
+}
+.video-cover{
+  display: table;
+  position: relative;
+  top: 0;
+  height: 500px;
+  width: 100%;
+  .video-text{
+    display: table-cell;
+    vertical-align: middle;
   }
 }
