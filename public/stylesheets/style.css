@@ -2523,7 +2523,10 @@ canvas {
   bottom: 10vh;
   width: 100%;
   text-align: center;
-  display: block; }
+  display: block;
+  -webkit-perspective: 150px;
+  /* Chrome, Safari, Opera  */
+  perspective: 150px; }
   .down-arrow i {
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0c138), to(#fff9e8));
     background: -webkit-linear-gradient(top, #f0c138, #fff9e8);
@@ -2536,7 +2539,7 @@ canvas {
 
 .bounce {
   display: block;
-  -webkit-animation: arrow-bounce 4s;
+  -webkit-animation: arrow-bounce 3s;
   animation-iteration-count: infinite; }
 
 @keyframes arrow-bounce {
@@ -2547,14 +2550,14 @@ canvas {
     transform: translateY(0);
     -webkit-transform: translateY(0); }
   40% {
-    transform: translateY(-30px);
-    -webkit-transform: translateY(-30px); }
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px); }
   45% {
     transform: translateY(0);
     -webkit-transform: translateY(0); }
   50% {
-    transform: translateY(-15px);
-    -webkit-transform: translateY(-15px); }
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px); }
   55% {
     transform: translateY(0);
     -webkit-transform: translateY(0); }
@@ -2820,56 +2823,56 @@ canvas {
 
 .classnav-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(10%, rgba(0, 0, 0, 0.4)), color-stop(90%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .venture360-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(10%, rgba(0, 0, 0, 0.6)), color-stop(90%, rgba(0, 0, 0, 0.6)), color-stop(100%, #f0c138)), url("/images/placeholder2.png") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, #f0c138)), url("/images/placeholder2.png") no-repeat;
+  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .glorieta-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(10%, rgba(0, 0, 0, 0.4)), color-stop(90%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.4) 90%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .vanity-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(10%, rgba(0, 0, 0, 0.3)), color-stop(90%, rgba(0, 0, 0, 0.3)), color-stop(100%, #fe826a)), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
+  background: -moz-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 95%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, rgba(0, 0, 0, 0.3)), color-stop(95%, rgba(0, 0, 0, 0.3)), color-stop(100%, #fe826a)), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 95%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
+  background: -o-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 95%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
+  background: -ms-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 95%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
+  background: linear-gradient(to bottom, #fe826a 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 95%, #fe826a 100%), url("/images/neature.jpeg") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .belmont-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(10%, rgba(0, 0, 0, 0.6)), color-stop(90%, rgba(0, 0, 0, 0.6)), color-stop(100%, #fe826a)), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.6) 90%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -moz-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, #fe826a)), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -o-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -ms-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: linear-gradient(to bottom, #fe826a 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 
