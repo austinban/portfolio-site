@@ -51,6 +51,14 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
+app.get('/work', function(req, res) {
+    res.render('pages/work');
+});
+
+app.get('/contact', function(req, res) {
+    res.render('pages/contact');
+});
+
 // app.use('/', index);
 // app.use('/users', users);
 

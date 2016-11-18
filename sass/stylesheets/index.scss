@@ -27,6 +27,7 @@
   position: relative;
   color: $cream;
   padding: 30px 0;
+  background-color: $story-yellow;
   .text-block{
     text-rendering: optimizeLegibility;
     display: table-cell;
@@ -77,21 +78,21 @@
   padding: 250px 10% !important;
   $top: $story-yellow;
   $mid: rgba(0,0,0,.4);
-  $bottom: $story-yellow;
+  $bottom: rgba(0,0,0,.6);
   $url: "/images/classNav.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 .venture360-window{
   padding: 250px 10% !important;
-  $top: $story-yellow;
+  $top: rgba(0,0,0,.7);
   $mid: rgba(0,0,0,.6);
-  $bottom: $story-yellow;
+  $bottom: rgba(0,0,0,.7);
   $url: "/images/placeholder2.png";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 .glorieta-window{
   padding: 250px 10% !important;
-  $top: $story-yellow;
+  $top: rgba(0,0,0,.6);
   $mid: rgba(0,0,0,.4);
   $bottom: $story-yellow;
   $url: "/images/neature.jpeg";

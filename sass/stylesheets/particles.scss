@@ -85,7 +85,8 @@ canvas{
   -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   perspective: 150px;
   i{
-    $grad1:  $story-yellow;
+    font-size: 1.2rem;
+    $grad1:  rgba(0,0,0,0);
     $grad2: $cream;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
     background: -webkit-linear-gradient(top, $grad1, $grad2);

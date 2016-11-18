@@ -19,4 +19,16 @@ router.get('/contact', function(req, res){
   });
 });
 
+router.get('/work', function(req, res){
+  res.render('work', {
+    title: 'Work'
+  });
+});
+
+router.get('/error', function(req, res){
+  res.render('error', {
+    title: 'Error'
+  });
+});
+
 module.exports = router;

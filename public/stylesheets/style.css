@@ -2336,7 +2336,7 @@ body, a, h1, h2, h3, h4, h5, h6, li, ul, ol, label, input, select, span {
   font-family: 'Source Sans Pro', sans-serif; }
 
 body {
-  background: #f0c138;
+  background: #fe826a;
   overflow-x: hidden; }
 
 h1 {
@@ -2528,11 +2528,12 @@ canvas {
   /* Chrome, Safari, Opera  */
   perspective: 150px; }
   .down-arrow i {
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0c138), to(#fff9e8));
-    background: -webkit-linear-gradient(top, #f0c138, #fff9e8);
-    background: -moz-linear-gradient(top, #f0c138, #fff9e8);
-    background: -ms-linear-gradient(top, #f0c138, #fff9e8);
-    background: -o-linear-gradient(top, #f0c138, #fff9e8);
+    font-size: 1.2rem;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#fff9e8));
+    background: -webkit-linear-gradient(top, transparent, #fff9e8);
+    background: -moz-linear-gradient(top, transparent, #fff9e8);
+    background: -ms-linear-gradient(top, transparent, #fff9e8);
+    background: -o-linear-gradient(top, transparent, #fff9e8);
     border-radius: 50%;
     border: 2px solid #fff9e8;
     padding: 15px; }
@@ -2781,7 +2782,8 @@ canvas {
   width: 100%;
   position: relative;
   color: #fff9e8;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #f0c138; }
   .index-block .text-block {
     text-rendering: optimizeLegibility;
     display: table-cell;
@@ -2823,34 +2825,34 @@ canvas {
 
 .classnav-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/classNav.jpg") no-repeat;
+  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.6))), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .venture360-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, #f0c138)), url("/images/placeholder2.png") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, #f0c138 100%), url("/images/placeholder2.png") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/placeholder2.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/placeholder2.png") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/placeholder2.png") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/placeholder2.png") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/placeholder2.png") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/placeholder2.png") no-repeat;
   background-size: cover;
   background-position: center; }
 
 .glorieta-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0c138), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/neature.jpeg") no-repeat;
-  background: -webkit-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -o-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: -ms-linear-gradient(top, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
-  background: linear-gradient(to bottom, #f0c138 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #f0c138)), url("/images/neature.jpeg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 95%, #f0c138 100%), url("/images/neature.jpeg") no-repeat;
   background-size: cover;
   background-position: center; }
 
