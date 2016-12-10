@@ -51,6 +51,26 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
+app.get('/work', function(req, res) {
+    res.render('pages/work');
+});
+
+app.get('/contact', function(req, res) {
+    res.render('pages/contact');
+});
+
+app.get('/classnav', function(req, res) {
+    res.render('pages/classnav');
+});
+
+app.get('/venture360', function(req, res) {
+    res.render('pages/venture360');
+});
+
+app.get('/veripharm', function(req, res) {
+    res.render('pages/veripharm');
+});
+
 // app.use('/', index);
 // app.use('/users', users);
 

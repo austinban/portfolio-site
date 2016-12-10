@@ -9,6 +9,9 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 10px 10px 10px 0;
+  i{
+    width: 18px;
+  }
   &:hover{
     transition: all .2s;
     background: $cream;
