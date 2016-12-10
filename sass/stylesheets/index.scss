@@ -186,7 +186,7 @@
   $top: rgba(0,0,0,.5);
   $mid: rgba(0,0,0,.5);
   $bottom: $dusty-pink;
-  $url: "/images/classnav.jpg";
+  $url: "/images/classNav.jpg";
   background-image: none;
   @include gradient-mid-cover($top, $mid, $bottom, $url);
   .small-12{
