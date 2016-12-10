@@ -7,7 +7,7 @@
     padding-top: 20px
   }
   ul{
-    padding: 0 10%;
+    padding: 0 20%;
     margin-top: 20px;
     display: table;
     table-layout: fixed;
@@ -22,7 +22,6 @@
         color: $cream !important;
         transition: color .5s;
         font-family: "cooper_hewittheavy", Arial-black, Arial;
-        text-transform: uppercase;
         &:hover {
           color: lighten($cream, 10) !important;
         }
@@ -35,11 +34,14 @@
     }
   }
   .topper{
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fe826a), to(#f0c138));
-    background: -webkit-linear-gradient(bottom, #fe826a, #f0c138);
-    background: -moz-linear-gradient(bottom, #fe826a, #f0c138);
-    background: -ms-linear-gradient(bottom, #fe826a, #f0c138);
-    background: -o-linear-gradient(bottom, #fe826a, #f0c138);
+
+    $grad1:  $dusty-pink;
+    $grad2: $story-yellow;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad2), to($grad1));
+    background: -webkit-linear-gradient(bottom, $grad1, $grad2);
+    background: -moz-linear-gradient(bottom, $grad1, $grad2);
+    background: -ms-linear-gradient(bottom, $grad1, $grad2);
+    background: -o-linear-gradient(bottom, $grad1, $grad2);
     height: 50px;
   }
   .row{

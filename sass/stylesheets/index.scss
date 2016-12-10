@@ -17,6 +17,17 @@
   background-size: cover;
   background-position: center;
 }
+
+@mixin gradient-mid-cover($top, $mid, $bottom, $url) {
+  background: -moz-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%), url($url) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(5%, $mid), color-stop(95%, $mid), color-stop(100%, $bottom)), url($url) no-repeat;
+  background: -webkit-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%), url($url) no-repeat;
+  background: -o-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%), url($url) no-repeat;
+  background: -ms-linear-gradient(top, $top 0%, $mid 5%,$mid 50%, $bottom 100%), url($url) no-repeat;
+  background: linear-gradient(to bottom, $top 0%, $mid 5%, $mid 50%, $bottom 100%), url($url) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .pink{
   background-color: $dusty-pink !important;
 }
@@ -26,7 +37,7 @@
   width: 100%;
   position: relative;
   color: $cream;
-  padding: 30px 0;
+  padding-top: 15px;
   background-color: $story-yellow;
   .text-block{
     text-rendering: optimizeLegibility;
@@ -84,10 +95,10 @@
 }
 .venture360-window{
   padding: 250px 10% !important;
-  $top: rgba(0,0,0,.7);
-  $mid: rgba(0,0,0,.6);
-  $bottom: rgba(0,0,0,.7);
-  $url: "/images/placeholder2.png";
+  $top: rgba(0,0,0,.6);
+  $mid: rgba(0,0,0,.4);
+  $bottom: rgba(0,0,0,.6);
+  $url: "/images/skyline.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 .glorieta-window{
@@ -95,7 +106,15 @@
   $top: rgba(0,0,0,.6);
   $mid: rgba(0,0,0,.4);
   $bottom: $story-yellow;
-  $url: "/images/neature.jpeg";
+  $url: "/images/neature.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.veripharm-window{
+  padding: 250px 10% !important;
+  $top: rgba(0,0,0,.7);
+  $mid: rgba(0,0,0,.6);
+  $bottom: $story-yellow;
+  $url: "/images/pills.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 .vanity-window{
@@ -103,7 +122,7 @@
   $top: $dusty-pink;
   $mid: rgba(0,0,0,.3);
   $bottom: $dusty-pink;
-  $url: "/images/neature.jpeg";
+  $url: "/images/neature.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 .belmont-window{
@@ -112,6 +131,157 @@
   $mid: rgba(0,0,0,.6);
   $bottom: $dusty-pink;
   $url: "/images/belmont.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.profile-window{
+  $top: $story-yellow;
+  $mid: $story-yellow;
+  $bottom: $dusty-pink;
+  $url: "/images/belmont.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.yellow-pink-pink{
+  $top: $dusty-pink;
+  $mid: $dusty-pink;
+  $bottom: $dusty-pink;
+  $url: "/images/belmont.jpg";
+  background-image: none;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.about-header{
+  padding: 0 !important;
+  $top: rgba(0,0,0,.4);
+  $mid: rgba(0,0,0,.4);
+  $bottom: $dusty-pink;
+  $url: "/images/aboutHeader.jpg";
+  background-image: none;
+  @include gradient-mid-cover($top, $mid, $bottom, $url);
+}
+.veripharm-header{
+  padding: 0 !important;
+  $top: rgba(0,0,0,.5);
+  $mid: rgba(0,0,0,.5);
+  $bottom: $dusty-pink;
+  $url: "/images/pills.jpg";
+  background-image: none;
+  @include gradient-mid-cover($top, $mid, $bottom, $url);
+  .small-12{
+    padding: 0 10%;
+  }
+}
+.venture-header{
+  padding: 0 !important;
+  $top: rgba(0,0,0,.5);
+  $mid: rgba(0,0,0,.5);
+  $bottom: $dusty-pink;
+  $url: "/images/skyline.jpg";
+  background-image: none;
+  @include gradient-mid-cover($top, $mid, $bottom, $url);
+  .small-12{
+    padding: 0 10%;
+  }
+}
+.classnav-header{
+  padding: 0 !important;
+  $top: rgba(0,0,0,.5);
+  $mid: rgba(0,0,0,.5);
+  $bottom: $dusty-pink;
+  $url: "/images/classnav.jpg";
+  background-image: none;
+  @include gradient-mid-cover($top, $mid, $bottom, $url);
+  .small-12{
+    padding: 0 10%;
+  }
+}
+.veri0-window{
+  padding: 20% 10% !important;
+  min-height: 0px !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/veri-0.jpg";
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.veri1-window{
+  padding: 20% 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/veri-1.jpg";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.veri2-window{
+  padding: 20% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/veri-2.jpg";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.class0-window{
+  padding: 25% 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/class-5.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.class1-window{
+  padding: 25% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/class-1.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.class2-window{
+  padding: 25% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/class-2.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.class3-window{
+  padding: 25% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/class-3.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.class4-window{
+  padding: 25% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/class-4.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.venture0-window{
+  min-height: 0px !important;
+  padding: 25% 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/venture-0.png";
+  background-position: center top !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
+.venture1-window{
+  padding: 25% 10% !important;
+  $top: $story-yellow;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $story-yellow;
+  $url: "/images/venture-1.png";
+  background-position: center top !important;
   @include gradient-cover($top, $mid, $bottom, $url);
 }
 video{
@@ -136,6 +306,17 @@ video{
   mix-blend-mode: color;
   opacity: .2;
 }
+.profile-block{
+  background-color: #fe826a;
+  $grad1:  $dusty-pink;
+  $grad2: $story-yellow;
+
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
+  background: -webkit-linear-gradient(top, $grad1, $grad2);
+  background: -moz-linear-gradient(top, $grad1, $grad2);
+  background: -ms-linear-gradient(top, $grad1, $grad2);
+  background: -o-linear-gradient(top, $grad1, $grad2);
+}
 .video-cover{
   display: table;
   position: relative;
@@ -145,5 +326,19 @@ video{
   .video-text{
     display: table-cell;
     vertical-align: middle;
+  }
+}
+
+#workSection{
+  padding-top: 40px;
+}
+
+.heading-pad{
+  padding-top: 80px;
+}
+
+.heading-block{
+  p{
+    padding: 0 5%;
   }
 }
