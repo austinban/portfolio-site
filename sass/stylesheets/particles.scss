@@ -27,7 +27,6 @@ canvas{
 	top: 0;
 	left: 0;
   height: 100vh;
-  min-height: 720px;
   display: table;
 	pointer-events: none;
   -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
@@ -40,6 +39,7 @@ canvas{
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 10%;
+    padding-top: -200px;
   	-webkit-animation: flip 1s;
   	animation-iteration-count: once;
   	animation-timing-function: cubic-bezier(.34,.01,.18,1.35);
