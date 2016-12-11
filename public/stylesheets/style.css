@@ -2651,8 +2651,8 @@ canvas {
 
 .nav .material-design-hamburger__layer {
   display: block;
-  width: 50px;
-  height: 8px;
+  width: 35px;
+  height: 5px;
   background: #fff9e8;
   position: relative;
   animation-duration: 300ms;
@@ -2662,7 +2662,7 @@ canvas {
 .nav .material-design-hamburger__layer:before, .nav .material-design-hamburger__layer:after {
   display: block;
   width: inherit;
-  height: 8px;
+  height: 5px;
   position: absolute;
   background: inherit;
   left: 0;
@@ -2709,14 +2709,14 @@ canvas {
   0% { }
   100% {
     transform: rotate(45deg);
-    margin: -10% 37%;
+    margin: -6% 37%;
     width: 75%; } }
 
 @keyframes material-design-hamburger__icon--slide-after {
   0% { }
   100% {
     transform: rotate(-45deg);
-    margin: -10% 37%;
+    margin: -6% 37%;
     width: 75%; } }
 
 @keyframes material-design-hamburger__icon--slide-from {
@@ -2727,14 +2727,14 @@ canvas {
 @keyframes material-design-hamburger__icon--slide-before-from {
   0% {
     transform: rotate(45deg);
-    margin: -10% 37%;
+    margin: -6% 37%;
     width: 75%; }
   100% { } }
 
 @keyframes material-design-hamburger__icon--slide-after-from {
   0% {
     transform: rotate(-45deg);
-    margin: -10% 37%;
+    margin: -6% 37%;
     width: 75%; }
   100% { } }
 
