@@ -3066,15 +3066,27 @@ canvas {
   background-size: cover;
   background-position: center; }
 
+.veri3-window {
+  padding: 28% 10% !important;
+  background-position: center !important;
+  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #fe826a)), url("/images/veripharm.png") no-repeat;
+  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
+  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
+  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
+  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 .class0-window {
   padding: 25% 10% !important;
   background-position: center top !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-5.png") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.png") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.png") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.png") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.png") no-repeat;
+  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-5.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
+  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
+  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
+  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 

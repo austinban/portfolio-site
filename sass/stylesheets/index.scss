@@ -223,12 +223,21 @@
   background-position: center top !important;
   @include gradient-cover($top, $mid, $bottom, $url);
 }
+.veri3-window{
+  padding: 28% 10% !important;
+  $top: $dusty-pink;
+  $mid: rgba(0,0,0,.0);
+  $bottom: $dusty-pink;
+  $url: "/images/veripharm.png";
+  background-position: center !important;
+  @include gradient-cover($top, $mid, $bottom, $url);
+}
 .class0-window{
   padding: 25% 10% !important;
   $top: $dusty-pink;
   $mid: rgba(0,0,0,.0);
   $bottom: $story-yellow;
-  $url: "/images/class-5.png";
+  $url: "/images/class-5.jpg";
   background-position: center top !important;
   @include gradient-cover($top, $mid, $bottom, $url);
 }
