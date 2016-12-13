@@ -2406,9 +2406,9 @@ a {
     a:hover i {
       color: #eeab12; }
   a:active {
-    color: inherit; }
+    color: #fff9e8; }
   a:visited {
-    color: inherit; }
+    color: #fff9e8; }
 
 ul {
   list-style: none;
