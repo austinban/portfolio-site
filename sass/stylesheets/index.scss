@@ -131,7 +131,7 @@
 .belmont-window{
   padding: 250px 10% !important;
   $top: $dusty-pink;
-  $mid: rgba(0,0,0,.6);
+  $mid: rgba(0,0,0,.7);
   $bottom: $dusty-pink;
   $url: "/images/belmont.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
