@@ -2401,11 +2401,14 @@ a {
   a:hover {
     -webkit-animation: tottle .2s;
     animation-iteration-count: once;
-    animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
+    animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35);
+    color: inherit; }
     a:hover i {
       color: #eeab12; }
+  a:active {
+    color: inherit; }
   a:visited {
-    color: #fff9e8; }
+    color: inherit; }
 
 ul {
   list-style: none;

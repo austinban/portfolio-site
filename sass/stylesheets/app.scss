@@ -101,12 +101,16 @@ a{
     -webkit-animation: tottle .2s;
     animation-iteration-count: once;
     animation-timing-function: cubic-bezier(.34,.01,.18,1.35);
+    color: inherit;
     i{
       color: $story-yellow;
     }
   }
+  &:active{
+    color: inherit;
+  }
   &:visited {
-    color: $cream;
+    color: inherit;
   }
 }
 ul{
