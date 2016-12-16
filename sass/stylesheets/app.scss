@@ -32,7 +32,19 @@ body,a,h1,h2,h3,h4,h5,h6,li,ul,ol,label,input,select,span {
 
 body{
   background: $dusty-pink;
-  overflow-x: hidden;
+  width: 100% !important;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
+}
+
+.full-wrap{
+  width: 100% !important;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
 }
 
 h1{

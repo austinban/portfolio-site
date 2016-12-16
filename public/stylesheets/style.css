@@ -2337,7 +2337,18 @@ body, a, h1, h2, h3, h4, h5, h6, li, ul, ol, label, input, select, span {
 
 body {
   background: #fe826a;
-  overflow-x: hidden; }
+  width: 100% !important;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important; }
+
+.full-wrap {
+  width: 100% !important;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important; }
 
 h1 {
   font-size: 2.5em;
@@ -2489,6 +2500,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100vh;
   display: table;
   pointer-events: none;
@@ -6326,5 +6338,3 @@ video {
 
 [data-aos=flip-down].aos-animate {
   transform: perspective(2500px) rotateX(0); }
-
-/*# sourceMappingURL=aos.css.map*/
