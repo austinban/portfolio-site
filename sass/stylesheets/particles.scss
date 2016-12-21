@@ -77,7 +77,6 @@ canvas{
 }
 
 .down-arrow{
-  color: $dusty-pink;
   position: relative;
   bottom: 110px;
   width: 100%;
@@ -90,17 +89,13 @@ canvas{
     margin-bottom: 5px;
   }
   i{
-    font-size: 1.2rem;
-    $grad1:  rgba(0,0,0,0);
-    $grad2: $cream;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($grad1), to($grad2));
-    background: -webkit-linear-gradient(top, $grad1, $grad2);
-    background: -moz-linear-gradient(top, $grad1, $grad2);
-    background: -ms-linear-gradient(top, $grad1, $grad2);
-    background: -o-linear-gradient(top, $grad1, $grad2);
+    font-size: 1rem;
+    color: $dusty-pink;
+    background-color: $cream;
     border-radius: 50%;
     border: 2px solid $cream;
     padding: 15px;
+    transition: all .2s;
   }
 }
 .bounce {

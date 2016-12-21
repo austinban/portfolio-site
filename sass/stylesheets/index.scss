@@ -37,7 +37,7 @@
   width: 100%;
   position: relative;
   color: $cream;
-  padding-top: 15px;
+  padding-top: 2px;
   background-color: $story-yellow;
   .text-block{
     text-rendering: optimizeLegibility;
@@ -87,7 +87,7 @@
 }
 .classnav-window{
   padding: 250px 10% !important;
-  $top: $story-yellow;
+  $top: rgba(0,0,0,.7);
   $mid: rgba(0,0,0,.5);
   $bottom: rgba(0,0,0,.6);
   $url: "/images/classNav.jpg";
@@ -95,14 +95,18 @@
   @media screen and (max-width: 700px) {
     background-position: right center !important;
   }
+  border-top: 2px solid $cream;
+  border-bottom: 2px solid $cream;
 }
 .venture360-window{
   padding: 250px 10% !important;
   $top: rgba(0,0,0,.6);
   $mid: rgba(0,0,0,.5);
-  $bottom: $story-yellow;
+  $bottom: rgba(0,0,0,.7);
   $url: "/images/skyline.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
+  border-top: 2px solid $cream;
+  border-bottom: 2px solid $cream;
 }
 .glorieta-window{
   padding: 250px 10% !important;
@@ -119,6 +123,8 @@
   $bottom: rgba(0,0,0,.7);
   $url: "/images/pills.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
+  border-top: 2px solid $cream;
+  border-bottom: 2px solid $cream;
 }
 .vanity-window{
   padding: 250px 10% !important;
@@ -130,16 +136,18 @@
 }
 .belmont-window{
   padding: 250px 10% !important;
-  $top: $dusty-pink;
+  $top: rgba(0,0,0,.8);
   $mid: rgba(0,0,0,.7);
-  $bottom: $dusty-pink;
+  $bottom: rgba(0,0,0,.8);
   $url: "/images/belmont.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
+  border-top: 2px solid $cream;
+  border-bottom: 2px solid $cream;
 }
 .profile-window{
   $top: $story-yellow;
   $mid: $story-yellow;
-  $bottom: $dusty-pink;
+  $bottom: $story-yellow;
   $url: "/images/belmont.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
 }
@@ -196,105 +204,15 @@
     padding: 0 10%;
   }
 }
-.veri0-window{
-  padding: 20% 10% !important;
-  min-height: 0px !important;
-  $top: $dusty-pink;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/veri-0.jpg";
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.veri1-window{
-  padding: 20% 10% !important;
-  $top: $dusty-pink;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/veri-1.jpg";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.veri2-window{
-  padding: 20% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/veri-2.jpg";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.veri3-window{
-  padding: 28% 10% !important;
-  $top: $dusty-pink;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $dusty-pink;
-  $url: "/images/veripharm.png";
-  background-position: center !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.class0-window{
-  padding: 25% 10% !important;
-  $top: $dusty-pink;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/class-5.jpg";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.class1-window{
-  padding: 25% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/class-1.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.class2-window{
-  padding: 25% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/class-2.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.class3-window{
-  padding: 25% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/class-3.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.class4-window{
-  padding: 25% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/class-4.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.venture0-window{
-  min-height: 0px !important;
-  padding: 25% 10% !important;
-  $top: $dusty-pink;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/venture-0.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
-}
-.venture1-window{
-  padding: 25% 10% !important;
-  $top: $story-yellow;
-  $mid: rgba(0,0,0,.0);
-  $bottom: $story-yellow;
-  $url: "/images/venture-1.png";
-  background-position: center top !important;
-  @include gradient-cover($top, $mid, $bottom, $url);
+.img-wrap{
+  padding: 0 5%;
+  background-color: $story-yellow;
+  .case-image{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 2px solid $cream;
+  }
 }
 video{
   position: absolute;;

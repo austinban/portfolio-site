@@ -2551,7 +2551,6 @@ canvas {
     transform: rotateX(-10deg); } }
 
 .down-arrow {
-  color: #fe826a;
   position: relative;
   bottom: 110px;
   width: 100%;
@@ -2564,15 +2563,13 @@ canvas {
     font-size: 14px;
     margin-bottom: 5px; }
   .down-arrow i {
-    font-size: 1.2rem;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#fff9e8));
-    background: -webkit-linear-gradient(top, transparent, #fff9e8);
-    background: -moz-linear-gradient(top, transparent, #fff9e8);
-    background: -ms-linear-gradient(top, transparent, #fff9e8);
-    background: -o-linear-gradient(top, transparent, #fff9e8);
+    font-size: 1rem;
+    color: #fe826a;
+    background-color: #fff9e8;
     border-radius: 50%;
     border: 2px solid #fff9e8;
-    padding: 15px; }
+    padding: 15px;
+    transition: all .2s; }
 
 .bounce {
   display: block;
@@ -2871,7 +2868,7 @@ canvas {
   width: 100%;
   position: relative;
   color: #fff9e8;
-  padding-top: 15px;
+  padding-top: 2px;
   background-color: #eeab12; }
   .index-block .text-block {
     text-rendering: optimizeLegibility;
@@ -2914,28 +2911,32 @@ canvas {
 
 .classnav-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.6))), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.6))), url("/images/classNav.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-top: 2px solid #fff9e8;
+  border-bottom: 2px solid #fff9e8; }
   @media screen and (max-width: 700px) {
     .classnav-window {
       background-position: right center !important; } }
 
 .venture360-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, #eeab12 100%), url("/images/skyline.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, #eeab12)), url("/images/skyline.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, #eeab12 100%), url("/images/skyline.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, #eeab12 100%), url("/images/skyline.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, #eeab12 100%), url("/images/skyline.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, #eeab12 100%), url("/images/skyline.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/skyline.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-top: 2px solid #fff9e8;
+  border-bottom: 2px solid #fff9e8; }
 
 .glorieta-window {
   padding: 250px 10% !important;
@@ -2957,7 +2958,9 @@ canvas {
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-top: 2px solid #fff9e8;
+  border-bottom: 2px solid #fff9e8; }
 
 .vanity-window {
   padding: 250px 10% !important;
@@ -2972,22 +2975,24 @@ canvas {
 
 .belmont-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, rgba(0, 0, 0, 0.7)), color-stop(95%, rgba(0, 0, 0, 0.7)), color-stop(100%, #fe826a)), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(5%, rgba(0, 0, 0, 0.7)), color-stop(95%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.8))), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-top: 2px solid #fff9e8;
+  border-bottom: 2px solid #fff9e8; }
 
 .profile-window {
-  background: -moz-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, #eeab12), color-stop(95%, #eeab12), color-stop(100%, #fe826a)), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, #eeab12 5%, #eeab12 95%, #fe826a 100%), url("/images/belmont.jpg") no-repeat;
+  background: -moz-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, #eeab12), color-stop(95%, #eeab12), color-stop(100%, #eeab12)), url("/images/belmont.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
+  background: -o-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
+  background: -ms-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
+  background: linear-gradient(to bottom, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 
@@ -3056,138 +3061,14 @@ canvas {
   .classnav-header .small-12 {
     padding: 0 10%; }
 
-.veri0-window {
-  padding: 20% 10% !important;
-  min-height: 0px !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-0.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/veri-0.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-0.jpg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-0.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-0.jpg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-0.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.veri1-window {
-  padding: 20% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-1.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/veri-1.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-1.jpg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-1.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-1.jpg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-1.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.veri2-window {
-  padding: 20% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-2.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/veri-2.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-2.jpg") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-2.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-2.jpg") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/veri-2.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.veri3-window {
-  padding: 28% 10% !important;
-  background-position: center !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #fe826a)), url("/images/veripharm.png") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #fe826a 100%), url("/images/veripharm.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.class0-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-5.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-5.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.class1-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-1.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-1.png") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-1.png") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-1.png") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-1.png") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-1.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.class2-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-2.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-2.png") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-2.png") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-2.png") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-2.png") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-2.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.class3-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-3.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-3.png") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-3.png") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-3.png") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-3.png") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-3.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.class4-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-4.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/class-4.png") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-4.png") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-4.png") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-4.png") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/class-4.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.venture0-window {
-  min-height: 0px !important;
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-0.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe826a), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/venture-0.png") no-repeat;
-  background: -webkit-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-0.png") no-repeat;
-  background: -o-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-0.png") no-repeat;
-  background: -ms-linear-gradient(top, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-0.png") no-repeat;
-  background: linear-gradient(to bottom, #fe826a 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-0.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.venture1-window {
-  padding: 25% 10% !important;
-  background-position: center top !important;
-  background: -moz-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-1.png") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, transparent), color-stop(95%, transparent), color-stop(100%, #eeab12)), url("/images/venture-1.png") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-1.png") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-1.png") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-1.png") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, transparent 5%, transparent 95%, #eeab12 100%), url("/images/venture-1.png") no-repeat;
-  background-size: cover;
-  background-position: center; }
+.img-wrap {
+  padding: 0 5%;
+  background-color: #eeab12; }
+  .img-wrap .case-image {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 2px solid #fff9e8; }
 
 video {
   position: absolute;
@@ -3297,6 +3178,9 @@ video {
     animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
     .round-button:hover i {
       color: #fe826a; }
+
+button:focus {
+  outline: none; }
 
 /* FONT PATH
  * -------------------------- */
