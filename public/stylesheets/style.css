@@ -3188,6 +3188,89 @@ p a i {
 button:focus {
   outline: none; }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/images/aboutHeader.jpg") 50% 50% no-repeat #f9f9f9; }
+
+.loader {
+  background: #fe826a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+  bottom: 0;
+  -webkit-animation: pass 2.8s 1;
+  -moz-animation: pass 2.8s 1;
+  -ms-animation: pass 2.8s 1;
+  -o-animation: pass 2.8s 1;
+  animation: pass 2.8s 1;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1); }
+
+.ball1 {
+  background-color: #fff9e8; }
+
+.ball2 {
+  background-color: #eeab12; }
+
+.ball3 {
+  background-color: #fff9e8; }
+
+.ball4 {
+  background-color: #eeab12; }
+
+@-webkit-keyframes pass {
+  0% {
+    margin: 0 8.33333px; }
+  50% {
+    margin: 0px -58.33333px; }
+  100% {
+    margin: 0 8.33333px; } }
+
+@-moz-keyframes pass {
+  0% {
+    margin: 0 8.33333px; }
+  50% {
+    margin: 0px -58.33333px; }
+  100% {
+    margin: 0 8.33333px; } }
+
+@-ms-keyframes pass {
+  0% {
+    margin: 0 8.33333px; }
+  50% {
+    margin: 0px -58.33333px; }
+  100% {
+    margin: 0 8.33333px; } }
+
+@-o-keyframes pass {
+  0% {
+    margin: 0 8.33333px; }
+  50% {
+    margin: 0px -58.33333px; }
+  100% {
+    margin: 0 8.33333px; } }
+
+@keyframes pass {
+  0% {
+    margin: 0 8.33333px; }
+  50% {
+    margin: 0px -58.33333px; }
+  100% {
+    margin: 0 8.33333px; } }
+
 /* FONT PATH
  * -------------------------- */
 @font-face {
