@@ -3117,6 +3117,12 @@ video {
 .heading-block p {
   padding: 0 5%; }
 
+li a i {
+  font-size: .8em !important; }
+
+p a i {
+  font-size: .8em !important; }
+
 .footer {
   background-color: #fe826a;
   color: #fff9e8;
