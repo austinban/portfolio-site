@@ -3,84 +3,63 @@ Austin Ban portfolio site, 2016
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. This app is built using npm and express.js.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+If you don't already have npm, you'll need to install it to get the app running. In order to do so, run the following code in your terminal.
 
 ```
-Give examples
+sudo npm install npm -g
+```
+
+To ensure npm installed correctly, run:
+
+```
+npm -v
+```
+
+The output should look similar to:
+
+```
+3.9.3
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+To install node, follow the instructions found here: https://docs.npmjs.com/getting-started/installing-node.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+To ensure node installed correctly, run:
 
 ```
-until finished
+node -v
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+The output should look similar to:
 
 ```
-Give an example
+v6.2.1
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+Once node is installed, all you need to do to get the app running is run the following command from the home directory:
 
 ```
-Give an example
+npm start
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+from your home directory in terminal. The default host port is 3000, so the app can be seen on http://localhost:3000/. To terminate the local server, press `control+c`.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](http://expressjs.com/)
+* [Particles.js](http://vincentgarreau.com/particles.js/)
+* [sassMiddleware](https://github.com/sass/node-sass-middleware)
 
-## Contributing
+## Author
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Austin Ban**
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
