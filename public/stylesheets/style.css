@@ -2516,7 +2516,7 @@ canvas {
     vertical-align: middle;
     padding: 2rem 10%;
     padding-top: -200px;
-    -webkit-animation: flip 1s;
+    -webkit-animation: flip 1.3s;
     animation-iteration-count: once;
     animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
 
@@ -2544,7 +2544,7 @@ canvas {
 @keyframes flip {
   0% {
     opacity: 0; }
-  25% {
+  50% {
     opacity: 0;
     -webkit-transform: rotateX(-10deg);
     /* Chrome, Safari, Opera  */
