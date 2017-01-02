@@ -37,7 +37,6 @@
   width: 100%;
   position: relative;
   color: $cream;
-  padding-top: 2px;
   background-color: $story-yellow;
   .text-block{
     text-rendering: optimizeLegibility;
@@ -95,8 +94,6 @@
   @media screen and (max-width: 700px) {
     background-position: right center !important;
   }
-  border-top: 2px solid $cream;
-  border-bottom: 2px solid $cream;
 }
 .venture360-window{
   padding: 250px 10% !important;
@@ -106,7 +103,6 @@
   $url: "/images/skyline.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
   border-top: 2px solid $cream;
-  border-bottom: 2px solid $cream;
 }
 .glorieta-window{
   padding: 250px 10% !important;
@@ -124,7 +120,6 @@
   $url: "/images/pills.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
   border-top: 2px solid $cream;
-  border-bottom: 2px solid $cream;
 }
 .vanity-window{
   padding: 250px 10% !important;

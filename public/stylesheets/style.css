@@ -2868,7 +2868,6 @@ canvas {
   width: 100%;
   position: relative;
   color: #fff9e8;
-  padding-top: 2px;
   background-color: #eeab12; }
   .index-block .text-block {
     text-rendering: optimizeLegibility;
@@ -2918,9 +2917,7 @@ canvas {
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
-  border-top: 2px solid #fff9e8;
-  border-bottom: 2px solid #fff9e8; }
+  background-position: center; }
   @media screen and (max-width: 700px) {
     .classnav-window {
       background-position: right center !important; } }
@@ -2935,8 +2932,7 @@ canvas {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 2px solid #fff9e8;
-  border-bottom: 2px solid #fff9e8; }
+  border-top: 2px solid #fff9e8; }
 
 .glorieta-window {
   padding: 250px 10% !important;
@@ -2959,8 +2955,7 @@ canvas {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 2px solid #fff9e8;
-  border-bottom: 2px solid #fff9e8; }
+  border-top: 2px solid #fff9e8; }
 
 .vanity-window {
   padding: 250px 10% !important;
