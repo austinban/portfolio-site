@@ -102,7 +102,7 @@
   $bottom: rgba(0,0,0,.7);
   $url: "/images/skyline.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
-  border-top: 2px solid $cream;
+  border-top: 2px solid $story-yellow;
 }
 .glorieta-window{
   padding: 250px 10% !important;
@@ -119,7 +119,7 @@
   $bottom: rgba(0,0,0,.7);
   $url: "/images/pills.jpg";
   @include gradient-cover($top, $mid, $bottom, $url);
-  border-top: 2px solid $cream;
+  border-top: 2px solid $story-yellow;
 }
 .vanity-window{
   padding: 250px 10% !important;
@@ -140,11 +140,8 @@
   border-bottom: 2px solid $cream;
 }
 .profile-window{
-  $top: $story-yellow;
-  $mid: $story-yellow;
-  $bottom: $story-yellow;
-  $url: "/images/belmont.jpg";
-  @include gradient-cover($top, $mid, $bottom, $url);
+  background-color: $story-yellow;
+  padding: 100px 0% !important;
 }
 .yellow-pink-pink{
   $top: $dusty-pink;

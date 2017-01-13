@@ -2522,8 +2522,8 @@ canvas {
 
 @media screen and (min-width: 1080px) {
   .huge {
-    font-size: 5rem;
-    line-height: 6rem;
+    font-size: 6rem;
+    line-height: 7rem;
     letter-spacing: .1rem; } }
 
 @media screen and (max-width: 1080px) {
@@ -2779,7 +2779,7 @@ canvas {
   width: 100%;
   z-index: 1000; }
   .absolute-nav ul {
-    padding: 0 30%;
+    padding: 0 25%;
     margin-top: 20px;
     display: table;
     table-layout: fixed;
@@ -2932,7 +2932,7 @@ canvas {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 2px solid #fff9e8; }
+  border-top: 2px solid #eeab12; }
 
 .glorieta-window {
   padding: 250px 10% !important;
@@ -2955,7 +2955,7 @@ canvas {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 2px solid #fff9e8; }
+  border-top: 2px solid #eeab12; }
 
 .vanity-window {
   padding: 250px 10% !important;
@@ -2982,14 +2982,8 @@ canvas {
   border-bottom: 2px solid #fff9e8; }
 
 .profile-window {
-  background: -moz-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeab12), color-stop(5%, #eeab12), color-stop(95%, #eeab12), color-stop(100%, #eeab12)), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
-  background: -o-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
-  background: -ms-linear-gradient(top, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
-  background: linear-gradient(to bottom, #eeab12 0%, #eeab12 5%, #eeab12 95%, #eeab12 100%), url("/images/belmont.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-color: #eeab12;
+  padding: 100px 0% !important; }
 
 .yellow-pink-pink {
   background-image: none;
