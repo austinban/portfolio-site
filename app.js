@@ -71,6 +71,10 @@ app.get('/veripharm', function(req, res) {
     res.render('pages/veripharm');
 });
 
+app.get('/blog', function(req, res) {
+    res.render('pages/blog');
+});
+
 // app.use('/', index);
 // app.use('/users', users);
 

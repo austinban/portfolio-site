@@ -3008,6 +3008,15 @@ canvas {
   background-size: cover;
   background-position: center; }
 
+.blog-header {
+  padding: 0 !important;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #fe826a));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%); }
+
 .veripharm-header {
   padding: 0 !important;
   background-image: none;
@@ -3049,6 +3058,33 @@ canvas {
   background-position: center; }
   .classnav-header .small-12 {
     padding: 0 10%; }
+
+.page-header {
+  height: 90vh;
+  text-align: center; }
+
+.card {
+  overflow: hidden;
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+  padding: 0; }
+  .card .card-text {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #fe826a));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%);
+    display: inline-block;
+    width: 100%;
+    padding-top: 100%; }
+
+.card:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left; }
 
 .img-wrap {
   padding: 0 5%;

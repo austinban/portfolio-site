@@ -28,6 +28,14 @@
   background-size: cover;
   background-position: center;
 }
+@mixin gradient-mid-cover-on-image($top, $mid, $bottom) {
+  background: -moz-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(5%, $mid), color-stop(95%, $mid), color-stop(100%, $bottom));
+  background: -webkit-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $mid 5%, $mid 50%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $mid 5%,$mid 50%, $bottom 100%);
+  background: linear-gradient(to bottom, $top 0%, $mid 5%, $mid 50%, $bottom 100%);
+}
 .pink{
   background-color: $dusty-pink !important;
 }
@@ -160,6 +168,13 @@
   background-image: none;
   @include gradient-mid-cover($top, $mid, $bottom, $url);
 }
+.blog-header{
+  padding: 0 !important;
+  $top: rgba(0,0,0,.4);
+  $mid: rgba(0,0,0,.4);
+  $bottom: $dusty-pink;
+  @include gradient-mid-cover-on-image($top, $mid, $bottom);
+}
 .veripharm-header{
   padding: 0 !important;
   $top: rgba(0,0,0,.5);
@@ -195,6 +210,38 @@
   .small-12{
     padding: 0 10%;
   }
+}
+.page-header{
+  height: 90vh;
+  text-align: center;
+}
+// .card {
+//   background-color: red;
+//   padding-top: 25%; /* 1:1 Aspect Ratio */
+//   position: relative; /* If you want text inside of it */
+// }
+
+.card{
+  overflow:hidden;
+  background-size: cover;
+  margin:auto;
+  text-align:center;
+  padding: 0;
+  .card-text {
+    $top: rgba(0,0,0,.4);
+    $mid: rgba(0,0,0,.4);
+    $bottom: $dusty-pink;
+    @include gradient-mid-cover-on-image($top, $mid, $bottom);
+    display:inline-block;
+    width: 100%;
+    padding-top:100%;
+
+  }
+}
+.card:before{
+  content:'';
+  padding-top:100%;/* vertical value as  100% equals width */
+  float:left;;
 }
 .img-wrap{
   padding: 0 5%;
