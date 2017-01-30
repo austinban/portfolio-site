@@ -326,3 +326,14 @@ p{
     }
   }
 }
+#awwwards-img{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 90px;
+  height: 140px;
+  display: inline-block;
+  background: url("../images/awwwards_nominee_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
