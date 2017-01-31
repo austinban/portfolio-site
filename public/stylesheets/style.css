@@ -3008,7 +3008,7 @@ canvas {
   background-position: center; }
   @media screen and (max-width: 700px) {
     .about-header {
-      background-position: left center !important; } }
+      background-position: 25% 50% !important; } }
 
 .blog-header {
   padding: 0 !important;

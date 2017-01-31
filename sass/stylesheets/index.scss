@@ -166,7 +166,7 @@
   $bottom: $dusty-pink;
   $url: "/images/aboutImage.jpg";
   @media screen and (max-width: 700px) {
-    background-position: left center !important;
+    background-position: 25% 50% !important;
   }
   @include gradient-mid-cover($top, $mid, $bottom, $url);
 }
