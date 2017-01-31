@@ -164,8 +164,10 @@
   $top: rgba(0,0,0,.4);
   $mid: rgba(0,0,0,.4);
   $bottom: $dusty-pink;
-  $url: "/images/aboutHeader.jpg";
-  background-image: none;
+  $url: "/images/aboutImage.jpg";
+  @media screen and (max-width: 700px) {
+    background-position: left center !important;
+  }
   @include gradient-mid-cover($top, $mid, $bottom, $url);
 }
 .blog-header{
