@@ -2608,11 +2608,11 @@ canvas {
 
 @media screen and (min-height: 600px) {
   .nav .menu div {
-    margin: .5em; } }
+    margin: 0.5em; } }
 
 @media screen and (max-height: 600px) {
   .nav .menu div {
-    margin: .3em; } }
+    margin: 0.3em; } }
 
 .nav .menu .wrapper {
   display: table-cell;
@@ -2629,7 +2629,7 @@ canvas {
   perspective: 150px; }
   @media screen and (min-height: 600px) {
     .nav .menu a {
-      padding: .25em;
+      padding: 0.25em;
       font-size: 2rem; } }
   @media screen and (max-height: 600px) {
     .nav .menu a {
@@ -2637,7 +2637,7 @@ canvas {
       font-size: 1.5rem; } }
 
 .nav .menu a:hover {
-  -webkit-animation: tottle .2s;
+  -webkit-animation: tottle 0.2s;
   animation-iteration-count: once;
   animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
 
@@ -2695,14 +2695,15 @@ canvas {
   animation-timing-function: ease-in-out;
   z-index: 1000; }
 
-.nav .material-design-hamburger__layer:before, .nav .material-design-hamburger__layer:after {
+.nav .material-design-hamburger__layer:before,
+.nav .material-design-hamburger__layer:after {
   display: block;
   width: inherit;
   height: 5px;
   position: absolute;
   background: inherit;
   left: 0;
-  content: '';
+  content: "";
   animation-duration: 300ms;
   animation-timing-function: ease-in-out; }
 
@@ -2793,12 +2794,12 @@ canvas {
       .absolute-nav ul li a {
         padding: 10px;
         color: #fff9e8 !important;
-        transition: color .5s;
+        transition: color 0.5s;
         font-family: "cooper_hewittheavy", Arial-black, Arial; }
         .absolute-nav ul li a:hover {
           color: white !important; }
       .absolute-nav ul li:hover {
-        -webkit-animation: tottle .2s;
+        -webkit-animation: tottle 0.2s;
         animation-iteration-count: once;
         animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
 
@@ -2831,7 +2832,8 @@ canvas {
       border-radius: 100px;
       border: 2px solid #fff9e8;
       font-size: 16px;
-      padding: 0 5px; }
+      padding: 0 5px;
+      white-space: nowrap; }
       .dropdown .dropdown-menu li:hover {
         background-color: #fff9e8; }
         .dropdown .dropdown-menu li:hover a {
@@ -2859,7 +2861,7 @@ canvas {
   background-position: bottom;
   height: 600px;
   mix-blend-mode: multiply;
-  opacity: .9; }
+  opacity: 0.9; }
 
 .pink {
   background-color: #fe826a !important; }
@@ -2910,28 +2912,28 @@ canvas {
     padding: 150px 10%;
     min-height: 450px; }
 
-.classnav-window {
+.crystal-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.6))), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/classNav.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/startup.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.6))), url("/images/startup.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/startup.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/startup.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/startup.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.6) 100%), url("/images/startup.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
   @media screen and (max-width: 700px) {
-    .classnav-window {
+    .crystal-window {
       background-position: right center !important; } }
 
-.venture360-window {
+.mobile-app-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/skyline.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/skyline.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/mobile-app.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/mobile-app.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/mobile-app.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/mobile-app.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/mobile-app.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/mobile-app.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   border-top: 2px solid #eeab12; }
@@ -2947,14 +2949,14 @@ canvas {
   background-size: cover;
   background-position: center; }
 
-.veripharm-window {
+.freelance-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/pills.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/pills.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/freelance.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(5%, rgba(0, 0, 0, 0.6)), color-stop(95%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.7))), url("/images/freelance.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/freelance.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/freelance.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/freelance.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.6) 95%, rgba(0, 0, 0, 0.7) 100%), url("/images/freelance.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   border-top: 2px solid #eeab12; }
@@ -2970,18 +2972,17 @@ canvas {
   background-size: cover;
   background-position: center; }
 
-.belmont-window {
+.home-window {
   padding: 250px 10% !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(5%, rgba(0, 0, 0, 0.7)), color-stop(95%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.8))), url("/images/belmont.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.7) 95%, rgba(0, 0, 0, 0.8) 100%), url("/images/belmont.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 5%, rgba(0, 0, 0, 0.55) 95%, rgba(0, 0, 0, 0.65) 100%), url("/images/chickens.jpeg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(5%, rgba(0, 0, 0, 0.55)), color-stop(95%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.65))), url("/images/chickens.jpeg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 5%, rgba(0, 0, 0, 0.55) 95%, rgba(0, 0, 0, 0.65) 100%), url("/images/chickens.jpeg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 5%, rgba(0, 0, 0, 0.55) 95%, rgba(0, 0, 0, 0.65) 100%), url("/images/chickens.jpeg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 5%, rgba(0, 0, 0, 0.55) 95%, rgba(0, 0, 0, 0.65) 100%), url("/images/chickens.jpeg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 5%, rgba(0, 0, 0, 0.55) 95%, rgba(0, 0, 0, 0.65) 100%), url("/images/chickens.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 2px solid #fff9e8;
-  border-bottom: 2px solid #fff9e8; }
+  background-position: 50% 60%; }
 
 .profile-window {
   background-color: #eeab12;
@@ -3000,17 +3001,15 @@ canvas {
 
 .about-header {
   padding: 0 !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/aboutImage.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #fe826a)), url("/images/aboutImage.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/aboutImage.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/aboutImage.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/aboutImage.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/aboutImage.jpg") no-repeat;
+  background-position: 50% 72% !important;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/austin.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(5%, rgba(0, 0, 0, 0.4)), color-stop(95%, rgba(0, 0, 0, 0.4)), color-stop(100%, #fe826a)), url("/images/austin.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/austin.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/austin.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/austin.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.4) 50%, #fe826a 100%), url("/images/austin.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
-  @media screen and (max-width: 700px) {
-    .about-header {
-      background-position: 25% 50% !important; } }
 
 .blog-header {
   padding: 0 !important;
@@ -3049,18 +3048,18 @@ canvas {
   .venture-header .small-12 {
     padding: 0 10%; }
 
-.classnav-header {
+.crystal-header {
   padding: 0 !important;
   background-image: none;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, #fe826a)), url("/images/classNav.jpg") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/classNav.jpg") no-repeat;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/classNav.jpg") no-repeat;
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/classNav.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/classNav.jpg") no-repeat;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/startup.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(95%, rgba(0, 0, 0, 0.5)), color-stop(100%, #fe826a)), url("/images/startup.jpg") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/startup.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/startup.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/startup.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 50%, #fe826a 100%), url("/images/startup.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
-  .classnav-header .small-12 {
+  .crystal-header .small-12 {
     padding: 0 10%; }
 
 .page-header {
@@ -3085,7 +3084,7 @@ canvas {
     padding-top: 100%; }
 
 .card:before {
-  content: '';
+  content: "";
   padding-top: 100%;
   /* vertical value as  100% equals width */
   float: left; }
@@ -3097,7 +3096,17 @@ canvas {
     width: 100%;
     margin: 0 auto;
     border-radius: 30px;
-    border: 2px solid #fff9e8; }
+    border: 2px solid #fff9e8;
+    overflow: hidden;
+    position: relative; }
+    .img-wrap .case-image:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.24);
+      width: 100%;
+      height: 100%; }
 
 video {
   position: absolute;
@@ -3117,7 +3126,7 @@ video {
   background: -ms-linear-gradient(45deg, #fe826a, #fe826a);
   background: -o-linear-gradient(45deg, #fe826a, #fe826a);
   mix-blend-mode: color;
-  opacity: .2; }
+  opacity: 0.2; }
 
 .profile-block {
   background-color: #fe826a;
@@ -3147,10 +3156,10 @@ video {
   padding: 0 5%; }
 
 li a i {
-  font-size: .8em !important; }
+  font-size: 0.8em !important; }
 
 p a i {
-  font-size: .8em !important; }
+  font-size: 0.8em !important; }
 
 #awwwards-img {
   position: absolute;

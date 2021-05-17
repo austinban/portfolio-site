@@ -2,7 +2,7 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.banban.io/</loc>
+    <loc>/</loc>
 
     <lastmod>2017-01-26</lastmod>
 
@@ -12,7 +12,7 @@
 
   </url>
   <url>
-    <loc>http://www.banban.io/about</loc>
+    <loc>/about</loc>
 
     <lastmod>2017-01-25</lastmod>
 
@@ -22,7 +22,7 @@
 
   </url>
   <url>
-    <loc>http://www.banban.io/contact</loc>
+    <loc>/contact</loc>
 
     <lastmod>2017-01-26</lastmod>
 
@@ -32,7 +32,7 @@
 
   </url>
   <url>
-    <loc>http://www.banban.io/classnav</loc>
+    <loc>/classnav</loc>
 
     <lastmod>2017-01-23</lastmod>
 
@@ -40,7 +40,7 @@
 
   </url>
   <url>
-    <loc>http://www.banban.io/veripharm</loc>
+    <loc>/veripharm</loc>
 
     <lastmod>2017-01-22</lastmod>
 
@@ -48,7 +48,7 @@
 
   </url>
   <url>
-    <loc>http://www.banban.io/venture360</loc>
+    <loc>/venture360</loc>
 
     <lastmod>2017-01-24</lastmod>
 
