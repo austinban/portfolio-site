@@ -2526,7 +2526,7 @@ canvas {
   .huge {
     font-size: 6rem;
     line-height: 7rem;
-    letter-spacing: .1rem; } }
+    letter-spacing: 0.1rem; } }
 
 @media screen and (max-width: 1080px) {
   .huge {
@@ -2542,6 +2542,10 @@ canvas {
   .huge {
     font-size: 2.2rem;
     line-height: 2.2rem; } }
+
+.huge.constrain {
+  max-width: 1080px;
+  margin: 0 auto; }
 
 @keyframes flip {
   0% {
@@ -2571,7 +2575,7 @@ canvas {
     border-radius: 50%;
     border: 2px solid #fff9e8;
     padding: 15px;
-    transition: all .2s; }
+    transition: all 0.2s; }
 
 .bounce {
   display: block;
