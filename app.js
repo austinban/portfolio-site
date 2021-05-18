@@ -69,6 +69,10 @@ app.get("/mobile-app", function(req, res) {
   res.render("pages/mobile-app");
 });
 
+app.get("/alpaca", function(req, res) {
+  res.render("pages/alpaca");
+});
+
 app.get("/blog", function(req, res) {
   res.render("pages/blog");
 });

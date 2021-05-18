@@ -43,6 +43,12 @@ router.get("/mobile-app", function(req, res) {
   });
 });
 
+router.get("/alpaca", function(req, res) {
+  res.render("alpaca", {
+    title: "Alpaca | You're Welcome"
+  });
+});
+
 router.get("/error", function(req, res) {
   res.render("error", {
     title: "Error"
