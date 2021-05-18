@@ -61,12 +61,12 @@ app.get("/crystal", function(req, res) {
   res.render("pages/crystal");
 });
 
-app.get("/venture360", function(req, res) {
-  res.render("pages/venture360");
+app.get("/freelance", function(req, res) {
+  res.render("pages/freelance");
 });
 
-app.get("/veripharm", function(req, res) {
-  res.render("pages/veripharm");
+app.get("/mobile-app", function(req, res) {
+  res.render("pages/mobile-app");
 });
 
 app.get("/blog", function(req, res) {

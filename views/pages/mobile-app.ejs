@@ -1,0 +1,159 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mobile App Case | Austin Ban</title>
+  <% include ../partials/head %>
+</head>
+<div class="full-wrap">
+<body class="container">
+    <main>
+      <div class="gradient-block2" style="height: 100vh; text-align: center;">
+        <div class="text-block mobile-app-header">
+          <div class="small-12" data-aos="flip-up" data-aos-once="true" data-aos-duration="700" >
+            <h1 class="huge" style="text-align: center;">Building a Mobile App For Android & iOS</h1>
+          </div>
+        </div>
+      </div>
+      <div class="down-arrow bounce">
+        <a href="#next"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+      </div>
+
+      <!-- <div class="index-block veri3-window pink"></div> -->
+
+      <div id="next" class="index-block pink">
+        <div class="text-block gradient-block2">
+          <div class="img-text-wrapper">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h1>
+                Getting started.
+              </h1>
+              <p>
+                Because of my history using React, we decided to build this project using React Native, a platform that enables you to use Javascript to build an app for both iOS and Android at the same time. We also used Expo to help expedite the build process.
+              </p>
+              <p>
+                Thanks to my familiarity with Javascript, the learning curve was relatively small, the only exceptions being learning all of the miniscule differences between React Native and React.
+              </p>
+              <p>
+                One of the biggest hurdles in developing this project was finding all of the bugs that were different between platforms. Some things worked on Android, but broke in iOS. Some things worked in the iOS emulator, but broke once it was brought to an actual device. It took weeks of QA testing and iteractions to get to a stable product.
+              </p>
+              <p>
+                Once we had a stable proudct to deliver, the true challenge came when we started the deployment process.
+              </p>
+            </div>
+            <div class="case-image-wrapper">
+              <div class="case-image">
+                <img src="/images/mobile-app/home.png" alt="classnav case image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-block">
+        <div class="text-block">
+          <div class="img-text-wrapper reverse">
+            <div class="case-image-wrapper">
+              <div class="case-image">
+                <img src="/images/mobile-app/profile.png" alt="classnav case image">
+              </div>
+            </div>
+            <div class="" data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h1>
+                The deployment problem.
+              </h1>
+              <p>
+                For those who have gone through the process of deploying an app, these headaches need no explanation. Well, I suppose I should say for those who have deployed to the App Store. The Play Store is much more leniant in what they will accept.
+              </p>
+              <p>
+                When trying to submit to the App Store, the long game began where we would send in a version, wait 1-2 days, and then fix the issues they found. Upon resubmitting, they would come back a couple days later with more issues they found. And these issues were not large functional issues! No, they were tiny details, like using the word "free" in a screenshot. And all of this work did not even include the extensive licensing process that Apple puts you through.
+              </p>
+              <p>
+                Needless to say, when Apple finally accepted our app, I was ecstatic. Now, we had our app available for both Android and iOS, so we could begin marketing it from our primary site! I watched nervously as the user count quickly started growing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="index-block">
+        <div class="text-block">
+          <div class="img-text-wrapper">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h1>
+                Maintenence and reviews.
+              </h1>
+              <p>
+                Like anyone who has published something on the internet, I watched feverishly for the first reviews to roll in. Once they had, I was initially happy with them, until a review listing a bug rolled in.
+              </p>
+              <p>
+                The review left a comment noting a functional issue that left the user in a loop, and a scathing 2 stars (which is honestly more than a broken app deserves). Thankfully, we were able to quickly resolve the issue, send a comment to the reviewer letting them know the issue had been fixed, and then we started seeing all of the positive reviews.
+              </p>
+              <p>
+                As of now, the app has a cumulative rating of 4.5 stars across both platforms from 150+ reviews. We have had over 10,000 downloads and people continue to get value out of the product!
+              </p>
+              <p>
+                Maintenence of the app has been relatively minimal, except for when either the Play Store or App Store have changed their policies or app requirements, which have required me to make infrastructural changes by certain deadlines, or else our app would be pulled down.
+              </p>
+
+            </div>
+            <div class="case-image-wrapper">
+              <div class="case-image">
+                <img src="/images/mobile-app/default.png" alt="classnav case image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="index-block">
+        <div class="text-block">
+          <div class="small-12">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h1>
+                Biggest lessons learned.
+              </h1>
+              <p>
+                Building this app was a saga that required countless hours of researching help forums and debugging mystifying issues for weeks. When I started, I was incredibly intimidated by the prospect of publishing an app, but by the end, I had the experience and now have the confidence to be able to repeat it and make another. Hopefully with less headaches the second time around.
+              </p>
+            </div>
+            <div class="quote" data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h2 >
+                "Reseach your tools."
+              </h2>
+              <p>
+                Like I had mentioned above, we used React Native and Expo to build this app. This made the initial development much faster than it would have been otherwise, but these tools had certain limitations, especially Expo. Though Expo had several helpful tools in the process and worked great for our purposes, if we needed to build an app that had more features, Expo had it's limits and may have required us to fully rebuild the app without it, which could have set the development time back weeks, if not months.
+              </p>
+            </div>
+            <div class="quote" data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h2 >
+                "Fail fast."
+              </h2>
+              <p>
+                There were so many unknowns going into this project, but thankfully, the process to discover them was to do it wrong, carefully read the error messages, then try again. Like learning most things, the most important thing is to learn from your mistakes so that you don't repeat them in the future. The only failure is not trying again.
+              </p>
+            </div>
+            <div class="quote" data-aos="flip-up" data-aos-once="true" data-aos-duration="700">
+              <h2 >
+                "Those who answer questions on dev forums are heroes."
+              </h2>
+              <p>
+                I could not have done this project without the expansive help docs online, so for those that take the time to answer questions, bless you. I owe you dinner if I ever run into you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <% include ../partials/absolute-header %>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</div>
+</html>

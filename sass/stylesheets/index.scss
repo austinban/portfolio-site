@@ -284,24 +284,24 @@
   $bottom: $dusty-pink;
   @include gradient-mid-cover-on-image($top, $mid, $bottom);
 }
-.veripharm-header {
+.mobile-app-header {
   padding: 0 !important;
   $top: rgba(0, 0, 0, 0.5);
   $mid: rgba(0, 0, 0, 0.5);
   $bottom: $dusty-pink;
-  $url: "/images/pills.jpg";
+  $url: "/images/mobile-app.jpg";
   background-image: none;
   @include gradient-mid-cover($top, $mid, $bottom, $url);
   .small-12 {
     padding: 0 10%;
   }
 }
-.venture-header {
+.freelance-header {
   padding: 0 !important;
   $top: rgba(0, 0, 0, 0.5);
   $mid: rgba(0, 0, 0, 0.5);
   $bottom: $dusty-pink;
-  $url: "/images/skyline.jpg";
+  $url: "/images/freelance.jpg";
   background-image: none;
   @include gradient-mid-cover($top, $mid, $bottom, $url);
   .small-12 {
@@ -324,12 +324,6 @@
   height: 90vh;
   text-align: center;
 }
-// .card {
-//   background-color: red;
-//   padding-top: 25%; /* 1:1 Aspect Ratio */
-//   position: relative; /* If you want text inside of it */
-// }
-
 .card {
   overflow: hidden;
   background-size: cover;
@@ -345,31 +339,33 @@
     width: 100%;
     padding-top: 100%;
   }
+  &:before {
+    content: "";
+    padding-top: 100%; /* vertical value as  100% equals width */
+    float: left;
+  }
 }
-.card:before {
-  content: "";
-  padding-top: 100%; /* vertical value as  100% equals width */
-  float: left;
-}
+
 .img-wrap {
   padding: 0 5%;
   background-color: $story-yellow;
-  .case-image {
+}
+
+.case-image {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 2px solid $cream;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.24);
     width: 100%;
-    margin: 0 auto;
-    border-radius: 30px;
-    border: 2px solid $cream;
-    overflow: hidden;
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.24);
-      width: 100%;
-      height: 100%;
-    }
+    height: 100%;
   }
 }
 video {
@@ -467,4 +463,47 @@ p {
   background: url("../images/awwwards_nominee_white.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.text-block {
+  text-rendering: optimizeLegibility;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 150px 10%;
+  min-width: 450px;
+}
+
+.case-image-wrapper {
+  min-width: 380px;
+  margin-left: 64px;
+  max-width: 10vw;
+  @media (max-width: 1200px) {
+    min-width: 300px;
+  }
+  @media (max-width: 800px) {
+    min-width: 300px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 64px;
+  }
+}
+
+.img-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &.reverse {
+    @media (max-width: 800px) {
+      text-align: center;
+      flex-wrap: wrap-reverse;
+    }
+    .case-image-wrapper {
+      margin-left: 0;
+      margin-right: 64px;
+    }
+  }
 }

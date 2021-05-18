@@ -31,15 +31,15 @@ router.get("/crystal", function(req, res) {
   });
 });
 
-router.get("/venture360", function(req, res) {
-  res.render("venture360", {
-    title: "Venture360 Case"
+router.get("/freelance", function(req, res) {
+  res.render("freelance", {
+    title: "Freelance Case"
   });
 });
 
-router.get("/veripharm", function(req, res) {
-  res.render("veripharm", {
-    title: "Veripharm Case"
+router.get("/mobile-app", function(req, res) {
+  res.render("mobile-app", {
+    title: "Mobile App Case"
   });
 });
 
