@@ -2883,6 +2883,8 @@ canvas {
     vertical-align: middle;
     padding: 150px 10%;
     min-height: 450px; }
+    .index-block .text-block.no-bottom-padding {
+      padding-bottom: 0px; }
 
 .gradient-block {
   position: relative;
