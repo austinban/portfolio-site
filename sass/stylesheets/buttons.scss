@@ -1,32 +1,32 @@
-.round-button{
+.round-button {
   display: inline-block;
   color: $cream;
   border: 2px solid $cream;
   padding: 10px 20px;
   border-radius: 100px;
-  transition: all .2s;
-  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.2s;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   margin: 10px 10px 10px 0;
-  i{
+  i {
     width: 18px;
   }
-  &:hover{
-    transition: all .2s;
+  &:hover {
+    transition: all 0.2s;
     background: $cream;
-    color: $dusty-pink;
-    -webkit-animation: tottle .2s;
-  	animation-iteration-count: once;
-  	animation-timing-function: cubic-bezier(.34,.01,.18,1.35);
-    i{
+    color: $dusty-pink !important;
+    -webkit-animation: tottle 0.2s;
+    animation-iteration-count: once;
+    animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35);
+    i {
       color: $dusty-pink;
     }
   }
 }
 
-button{
-  &:focus{
+button {
+  &:focus {
     outline: none;
   }
 }
