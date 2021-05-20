@@ -23,6 +23,9 @@
       color: $dusty-pink;
     }
   }
+  &.hidden {
+    display: none;
+  }
 }
 
 button {

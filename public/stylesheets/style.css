@@ -3275,6 +3275,8 @@ p a i {
     animation-timing-function: cubic-bezier(0.34, 0.01, 0.18, 1.35); }
     .round-button:hover i {
       color: #fe826a; }
+  .round-button.hidden {
+    display: none; }
 
 button:focus {
   outline: none; }

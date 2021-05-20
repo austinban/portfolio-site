@@ -1,0 +1,26 @@
+<a id='successContact' class="round-button hidden">Email copied to clipboard <i class="fa fa-check" aria-hidden="true"></i></a>
+
+<script type="text/javascript">
+  function copyText(text) {
+    var base = document.getElementById('baseContact');
+    var success = document.getElementById('successContact');
+
+    base.classList.toggle('hidden')
+    success.classList.remove('hidden')
+
+    const input = document.createElement('input')
+    input.value = text
+    input.style.opacity = '0'
+    input.style.position = 'fixed'
+    document.body.appendChild(input)
+    input.select()
+    input.setSelectionRange(0, 99999)
+    document.execCommand('copy')
+    document.body.removeChild(input)
+
+    setTimeout(function(){
+      base.classList.remove('hidden')
+      success.classList.toggle('hidden')
+    }, 2400);
+  }
+</script>
